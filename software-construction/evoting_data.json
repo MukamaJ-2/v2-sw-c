@@ -1,0 +1,331 @@
+{
+  "candidates": {
+    "1": {
+      "id": 1,
+      "full_name": "Joseph Mukama",
+      "national_id": "CM123w4edkdkrq",
+      "date_of_birth": "2000-08-30",
+      "age": 25,
+      "gender": "M",
+      "education": "Bachelor's Degree",
+      "party": "FFP",
+      "manifesto": "I love Jesus and i want to make mukono Great",
+      "address": "Mukono",
+      "phone": "0762916855",
+      "email": "joseph@gmail.com",
+      "has_criminal_record": false,
+      "years_experience": 12,
+      "is_active": true,
+      "is_approved": true,
+      "created_at": "2026-03-12 11:51:39.357480",
+      "created_by": "admin"
+    },
+    "2": {
+      "id": 2,
+      "full_name": "Oscar Odongkara",
+      "national_id": "CM35314vd7q7vr",
+      "date_of_birth": "1996-02-14",
+      "age": 30,
+      "gender": "M",
+      "education": "Master's Degree",
+      "party": "NUP",
+      "manifesto": "I LOVE JESUS AND I WANT TO LOVE PEOPLE OF MUKONO",
+      "address": "oscar@gmail.com",
+      "phone": "0789564321",
+      "email": "oscar@gmail.com",
+      "has_criminal_record": false,
+      "years_experience": 13,
+      "is_active": true,
+      "is_approved": true,
+      "created_at": "2026-03-12 11:54:56.871154",
+      "created_by": "admin"
+    }
+  },
+  "candidate_id_counter": 3,
+  "voting_stations": {
+    "1": {
+      "id": 1,
+      "name": "Wandegeya",
+      "location": "Mukono",
+      "region": "Mukono",
+      "capacity": 1000,
+      "registered_voters": 0,
+      "supervisor": "Wakabi Opio",
+      "contact": "0765548588",
+      "opening_time": "08:00",
+      "closing_time": "17:00",
+      "is_active": true,
+      "created_at": "2026-03-12 11:32:21.566902",
+      "created_by": "admin"
+    }
+  },
+  "station_id_counter": 2,
+  "polls": {
+    "1": {
+      "id": 1,
+      "title": "Governor",
+      "description": "Governor Mukono woman MP",
+      "election_type": "General",
+      "start_date": "2026-03-12",
+      "end_date": "2026-03-14",
+      "positions": [
+        {
+          "position_id": 1,
+          "position_title": "Govenor",
+          "candidate_ids": [
+            2
+          ],
+          "max_winners": 2
+        }
+      ],
+      "station_ids": [
+        1
+      ],
+      "status": "open",
+      "total_votes_cast": 1,
+      "created_at": "2026-03-12 11:46:10.360463",
+      "created_by": "admin"
+    }
+  },
+  "poll_id_counter": 2,
+  "positions": {
+    "1": {
+      "id": 1,
+      "title": "Govenor",
+      "description": "A governor of Mukono who is a woman",
+      "level": "Regional",
+      "max_winners": 2,
+      "min_candidate_age": 26,
+      "is_active": true,
+      "created_at": "2026-03-12 11:44:11.454316",
+      "created_by": "admin"
+    }
+  },
+  "position_id_counter": 2,
+  "voters": {
+    "1": {
+      "id": 1,
+      "full_name": "Emokol Anna",
+      "national_id": "CF971461082PAH",
+      "date_of_birth": "2001-06-19",
+      "age": 24,
+      "gender": "F",
+      "address": "Mukono",
+      "phone": "0754367854",
+      "email": "anna@gmail.com",
+      "password": "7f92063f461ca1991c0f734dca11d2c98d30e14f08c0e5a7f8e631eca3bc1b52",
+      "voter_card_number": "GNI1SDTBKHPV",
+      "station_id": 1,
+      "is_verified": true,
+      "is_active": true,
+      "has_voted_in": [
+        1,
+        1
+      ],
+      "registered_at": "2026-03-12 11:37:45.472494",
+      "role": "voter"
+    }
+  },
+  "voter_id_counter": 2,
+  "admins": {
+    "1": {
+      "id": 1,
+      "username": "admin",
+      "password": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "full_name": "System Administrator",
+      "email": "admin@evote.com",
+      "role": "super_admin",
+      "created_at": "2026-03-12 11:28:29.407768",
+      "is_active": true
+    }
+  },
+  "admin_id_counter": 2,
+  "votes": [
+    {
+      "vote_id": "41408faee3b658491",
+      "poll_id": 1,
+      "position_id": 1,
+      "candidate_id": 2,
+      "voter_id": 1,
+      "station_id": 1,
+      "timestamp": "2026-03-12 12:05:43.790975",
+      "abstained": false
+    }
+  ],
+  "audit_log": [
+    {
+      "timestamp": "2026-03-12 11:28:41.447189",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 11:32:21.566941",
+      "action": "CREATE_STATION",
+      "user": "admin",
+      "details": "Created station: Wandegeya (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 11:33:52.798886",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 11:37:45.472519",
+      "action": "REGISTER",
+      "user": "Emokol Anna",
+      "details": "New voter registered with card: GNI1SDTBKHPV"
+    },
+    {
+      "timestamp": "2026-03-12 11:39:48.279102",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 11:44:11.454384",
+      "action": "CREATE_POSITION",
+      "user": "admin",
+      "details": "Created position: Govenor (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 11:46:10.360523",
+      "action": "CREATE_POLL",
+      "user": "admin",
+      "details": "Created poll: Governor (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 11:51:39.357564",
+      "action": "CREATE_CANDIDATE",
+      "user": "admin",
+      "details": "Created candidate: Joseph Mukama (ID: 1)"
+    },
+    {
+      "timestamp": "2026-03-12 11:54:56.871224",
+      "action": "CREATE_CANDIDATE",
+      "user": "admin",
+      "details": "Created candidate: Oscar Odongkara (ID: 2)"
+    },
+    {
+      "timestamp": "2026-03-12 11:56:08.081704",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 11:56:27.754467",
+      "action": "LOGIN_FAILED",
+      "user": "1",
+      "details": "Invalid voter credentials"
+    },
+    {
+      "timestamp": "2026-03-12 11:56:37.993671",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 11:57:00.141592",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 11:57:20.807290",
+      "action": "LOGIN_FAILED",
+      "user": "GNI1SDTBKHPV",
+      "details": "Invalid voter credentials"
+    },
+    {
+      "timestamp": "2026-03-12 12:00:39.550895",
+      "action": "LOGIN_FAILED",
+      "user": "CM23SD2QWS",
+      "details": "Invalid voter credentials"
+    },
+    {
+      "timestamp": "2026-03-12 12:00:58.392278",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 12:01:22.834279",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 12:01:35.661704",
+      "action": "LOGIN_FAILED",
+      "user": "GNI1SDTBKHPV",
+      "details": "Voter not verified"
+    },
+    {
+      "timestamp": "2026-03-12 12:01:56.830356",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 12:02:39.878745",
+      "action": "VERIFY_ALL_VOTERS",
+      "user": "admin",
+      "details": "Verified 1 voters"
+    },
+    {
+      "timestamp": "2026-03-12 12:02:52.266981",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 12:03:01.732470",
+      "action": "LOGIN",
+      "user": "GNI1SDTBKHPV",
+      "details": "Voter login successful"
+    },
+    {
+      "timestamp": "2026-03-12 12:03:33.746758",
+      "action": "LOGOUT",
+      "user": "GNI1SDTBKHPV",
+      "details": "Voter logged out"
+    },
+    {
+      "timestamp": "2026-03-12 12:03:41.279550",
+      "action": "LOGIN",
+      "user": "admin",
+      "details": "Admin login successful"
+    },
+    {
+      "timestamp": "2026-03-12 12:04:36.735928",
+      "action": "ASSIGN_CANDIDATES",
+      "user": "admin",
+      "details": "Updated candidates for poll: Governor"
+    },
+    {
+      "timestamp": "2026-03-12 12:04:58.669642",
+      "action": "OPEN_POLL",
+      "user": "admin",
+      "details": "Opened poll: Governor"
+    },
+    {
+      "timestamp": "2026-03-12 12:05:05.773605",
+      "action": "LOGOUT",
+      "user": "admin",
+      "details": "Admin logged out"
+    },
+    {
+      "timestamp": "2026-03-12 12:05:16.788816",
+      "action": "LOGIN",
+      "user": "GNI1SDTBKHPV",
+      "details": "Voter login successful"
+    },
+    {
+      "timestamp": "2026-03-12 12:05:43.791056",
+      "action": "CAST_VOTE",
+      "user": "GNI1SDTBKHPV",
+      "details": "Voted in poll: Governor (Hash: 41408faee3b65849)"
+    }
+  ]
+}
